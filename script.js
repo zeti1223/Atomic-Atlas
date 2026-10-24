@@ -39,7 +39,7 @@ const pos = n =>
                 const [row, col] = pos(d.number);
                 const cell = document.createElement("button");
                 cell.className = "el";
-                cell.style.cssText = `grid-area:${row}/${col};--c:${COLORS[d.category]};--i:${d.number - 1}`;
+                cell.style.cssText = `grid-area:${row}/${col};--c:${COLORS[d.category]};--i:${d.number - 1};--r:${((d.number * 37) % 7 - 3) * 0.9}deg`;
                 cell.title = d.name;
                 cell.innerHTML = `<span class="num">${d.number}</span><b>${d.symbol}</b><span class="nm">${d.name}</span>`;
                 cell.onclick = () => openCard(d);
@@ -73,6 +73,5 @@ const pos = n =>
 
         $("close").onclick = () => dlg.close();
         dlg.onclick = e => {
-            if (e.target === dlg) dlg.closest();
+            if (e.target === dlg) dlg.close();
         };
-
