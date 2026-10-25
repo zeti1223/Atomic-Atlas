@@ -6,7 +6,7 @@ A modern interactive periodic table. Click any element to see its symbol, atomic
 
 ## Try it
 
-https://atomic-atlas-two.vercel.app/
+https://zeti1223.github.io/Atomic-Atlas/
 
 ## Features
 
@@ -40,4 +40,4 @@ You need a small local server because the page loads `elements.json` with `fetch
 
 | Element card | On mobile |
 | --- | --- |
-| ![element card](screenshots/screenshot-modal.jpg) | ![mobile](screenshots/screenshot-mobile.jpg) |
+| ![element card](screenshots/screenshot-modal.png) | ![mobile](screenshots/screenshot-mobile.png) |
